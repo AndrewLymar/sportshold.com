@@ -1,0 +1,107 @@
+@import "libs";
+@import "vars";
+@import "fonts";
+@import "global";
+@import "flex";
+header {
+	font-family: "Trueno", sans-serif;
+	color: #fff;
+	.header-top {
+		font-size: 13px;
+		background-color: #472424;
+		ul {
+			height: 50px;
+			margin-right: auto;
+			li {
+				padding-right: 40px;
+				a {
+					transition: .3s;
+					&:hover {
+						color: #ff7373;
+					}
+				}
+			}
+		}
+		&-right-side {
+			img {
+				margin-right: 10px;
+			}
+			.items {
+				margin-left: 10px;
+				margin-right: 10px;
+				color: #dcc5b8;
+				cursor: pointer;
+				span {
+					margin-right: 4px;
+				}
+			}
+			.registration {
+				align-self: stretch;
+				border-left: 1px solid #5a3a3a;
+				border-right: 1px solid #5a3a3a;
+				.registration-container {
+					transition: .3s ease-in-out;
+					&:first-child {
+						border-right: 1px solid #5a3a3a;
+					}
+					&:hover {
+						background-color: #ff7373;
+					}
+				}
+				.login,
+				.register {
+					align-self: center;
+					padding-left: 20px;
+					padding-right: 20px;
+					cursor: pointer;
+					a {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.header-bottom {
+		height: 76px;
+		background-color: #623232;
+		.logo {
+			align-self: center;
+			margin-right: auto;
+		}
+		ul {
+			li {
+				margin-left: 35px;
+				cursor: pointer;
+				position: relative;
+				a {
+					transition: .3s;
+					&:hover {
+						color: #ff7373;
+						&:after {
+							width: 150%;
+						}
+					}
+					&:focus {
+						&:after {
+							width: 150%;
+						}
+					}
+					&:after {
+						display: block;
+						content: "";
+						position: absolute;
+						width: 0%;
+						height: 4px;
+						left: 50%;
+						top: 47px;
+						background-color: #ff7373;
+						transition: width .3s ease-in-out;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "media";

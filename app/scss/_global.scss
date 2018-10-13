@@ -27,13 +27,15 @@ a {
 body {
 	font-size: 16px;
 	min-width: 320px;
-	line-height: 1.65;
+	line-height: 26px;
 	font-family: $default-font;
 }
 
 .container {
 	width: 100%;
-	max-width: 1110px;
+	max-width: 1140px;
+	padding-left: 15px;
+	padding-right: 15px;
 	margin: 0 auto;
 }
 
@@ -71,17 +73,6 @@ html {
 
 body {
 	margin: 0;
-}
-
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
 }
 
 

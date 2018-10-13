@@ -3,8 +3,17 @@
 @import "fonts";
 @import "global";
 @import "flex";
-header {
+button {
+	border: 0;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+body {
 	font-family: "Trueno", sans-serif;
+}
+
+header {
 	color: #fff;
 	.header-top {
 		font-size: 13px;
@@ -100,6 +109,254 @@ header {
 					}
 				}
 			}
+		}
+	}
+	.banner {
+		position: relative;
+		padding-top: 134px;
+		padding-bottom: 134px;
+		padding-right: 100px;
+		background: #f0efee;
+		.banner-img {
+			position: absolute;
+			top: -74px;
+			left: -10%;
+		}
+		&-text {
+			width: 460px;
+			&-price {
+				font-size: 30px;
+				color: #623232;
+			}
+			h1 {
+				margin-top: 18px;
+				font-size: 70px;
+				font-weight: 900;
+				line-height: 0.9em;
+				color: #623232;
+			}
+			h2 {
+				margin-top: 24px;
+				font-size: 50px;
+				font-weight: 900;
+				line-height: 0.9em;
+				color: #ff7373;
+			}
+			p {
+				margin-top: 32px;
+				color: #8a8784;
+			}
+			button {
+				margin-top: 10px;
+				padding: 17px 47px;
+				font-weight: 600;
+				background-color: #ff7373;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.s-products {
+	padding-top: 50px;
+	padding-bottom: 100px;
+	.product {
+		margin-bottom: 30px;
+		padding-top: 45px;
+		padding-right: 10px;
+		padding-bottom: 50px;
+		padding-left: 10px;
+		text-align: center;
+		cursor: pointer;
+		.product-title {
+			font-size: 30px;
+			color: #fff;
+		}
+		h3 {
+			font-size: 30px;
+			margin-top: 15px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: #42d9ce;
+		}
+		button {
+			margin-top: auto;
+			padding: 19px 30px;
+			background-color: #4bd8cd;
+			font-size: 16px;
+			font-weight: 600;
+			color: #000;
+		}
+	}
+	.collection {
+		width: 540px;
+		height: 540px;
+		background: url("../img/new-goods.jpg") no-repeat;
+	}
+	.new-arrivals {
+		position: relative;
+		width: 540px;
+		height: 255px;
+		margin-bottom: 30px;
+		padding: 0;
+		background-color: #ff7373;
+		img {
+			position: relative;
+			top: -11px;
+			left: -15px;
+			margin-right: 35px;
+		}
+		&-container {
+			.product-title,
+			h3,
+			button {
+				color: #fff;
+			}
+			button {
+				margin-top: 30px;
+				padding: 16px 30px;
+				background-color: #623232;
+			}
+		}
+	}
+	.best {
+		width: 255px;
+		height: 255px;
+		background: url("../img/goods-2.jpg") no-repeat;
+		.product-title {
+			margin-top: auto;
+		}
+		h3 {
+			color: #ff7270;
+		}
+	}
+	.premium {
+		width: 255px;
+		height: 255px;
+		padding-top: 34px;
+		background: url("../img/premium.jpg") no-repeat;
+		.product-title {
+			color: #6b7072;
+		}
+		h3 {
+			color: #fff;
+		}
+	}
+	.filters {
+		margin-top: 60px;
+		.category {
+			margin-right: 45px;
+			font-size: 30px;
+			color: #bdb9b5;
+			text-transform: uppercase;
+			cursor: pointer;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				margin-right: 40px;
+				font-weight: 600;
+				color: #633231;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.products {
+		margin-top: 50px;
+		.product {
+			position: relative;
+			width: 250px;
+			height: 350px;
+			padding: 28px;
+			align-content: space-around;
+			text-align: left;
+			border: 1px solid #e0dfde;
+			color: #8a8784;
+			.price,
+			.discount-price {
+				font-size: 24px;
+			}
+			.price {
+				margin-bottom: 25px;
+				color: #8a8784;
+			}
+			.discount-price {
+				color: #ff7373;
+			}
+			.old-price {
+				text-decoration: line-through;
+			}
+			.discount {
+				position: absolute;
+				width: 61px;
+				height: 28px;
+				top: 26px;
+				right: 0px;
+				background: #ff7373;
+				font-weight: 600;
+				color: #fff;
+			}
+			&-text {
+				margin-top: auto;
+				.gender {
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+				p {
+					margin: 0;
+				}
+				.product-id {
+					font-size: 13px;
+					color: #BDB9B5;
+				}
+			}
+		}
+	}
+	.brands {
+		margin-top: 70px;
+	}
+}
+
+.s-reviews {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: url("../img/reviews-bg.png") no-repeat;
+	.customer {
+		margin-right: 50px;
+		&:last-child {
+			margin-right: 0;
+		}
+		h3 {
+			margin-top: 30px;
+			color: #fff;
+		}
+		.raiting {
+			margin-top: 8px;
+			.customer-img-container {
+				width: 60px;
+				height: 60px;
+				border: 2px solid #fff;
+				border-radius: 50%;
+				img {
+					margin-right: 3px;
+					border: 2px solid #fff;
+					border-radius: 50%;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+	.review-text {
+		margin-top: 50px;
+		padding: 50px;
+		background-color: rgba(255, 255, 255, 0.1);
+		p {
+			text-align: center;
+			color: #fff;
 		}
 	}
 }

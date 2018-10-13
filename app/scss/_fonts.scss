@@ -1,3 +1,4 @@
 @import "_mixins/font-face";
 @include font-face("Trueno", "../fonts/TruenoLt");
-@include font-face("Test", "../fonts/TestBold/TestBold", bold);
+@include font-face("Trueno", "../fonts/TruenoBd", 600);
+@include font-face("Trueno", "../fonts/TruenoExBd", 900);

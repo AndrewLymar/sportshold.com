@@ -1,20 +1,51 @@
-@media only screen and (max-width: $xl) {}
-
-@media only screen and (max-width: $lg) {
-	.container {
-		padding-left: 55px;
-		padding-right: 55px;
+	@media only screen and (max-width: $xl) {}
+	
+	@media only screen and (max-width: $lg) {
+		.container {
+			padding-left: 55px;
+			padding-right: 55px;
+		}
+		.s-subscribe {
+			button {
+				margin-top: 50px;
+			}
+		}
+		.features-item {
+			margin-bottom: 25px;
+		}
+		.contacts {
+			margin-bottom: 75px;
+		}
+		footer {
+			.contacts-and-links {
+				.contacts {
+					.contact {
+						&-block {
+							width: 80px;
+							height: 80px;
+							&-img {
+								width: 35px;
+								height: 35px;
+							}
+						}
+						&-text {
+							font-size: 1.2em;
+						}
+					}
+				}
+			}
+			.links-container {
+				width: 100%;
+			}
+			.copy,
+			.socials {
+				margin-top: 50px;
+			}
+		}
 	}
-	.contacts {
-		margin-bottom: 75px;
-	}
-	.links-container {
-		width: 100%;
-	}
-}
-
-@media only screen and (max-width: $md) {}
-
-@media only screen and (max-width: $sm) {}
-
-@media only screen and (max-width: $xs) {}
+	
+	@media only screen and (max-width: $md) {}
+	
+	@media only screen and (max-width: $sm) {}
+	
+	@media only screen and (max-width: $xs) {}

@@ -353,11 +353,8 @@
 			}
 			.raiting {
 				margin-top: 8px;
-				&-img {
-					width: 20px;
-					height: 20px;
+				img {
 					margin-right: 5px;
-					fill: #FF7373;
 				}
 			}
 		}
@@ -511,7 +508,7 @@
 				}
 			}
 			.links-container {
-				width: 730px;
+				flex-basis: 730px;
 				.links {
 					h3 {
 						font-size: 18px;
@@ -548,6 +545,9 @@
 					fill: #fff;
 					transition: .3s ease-in-out;
 					cursor: pointer;
+					&:first-child {
+						margin: 0;
+					}
 					&:hover {
 						fill: #ff7373;
 					}

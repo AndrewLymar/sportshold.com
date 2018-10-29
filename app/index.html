@@ -10,9 +10,9 @@
 </head>
 
 <body>
-	<header>
+	<header id="home">
 		<div class="header-top">
-			<div class="container flex-row">
+			<div class="container flex-row flex-center-md flex-wrap">
 				<ul class="flex-row flex-middle">
 					<li>
 						<a href="">Support</a>
@@ -47,15 +47,18 @@
 				</div>
 			</div>
 		</div>
-		<div class="header-bottom flex-row">
-			<div class="container flex-row">
-				<img src="img/logo.png" class="flex-row logo" alt="sportshold">
-				<ul class="flex-row flex-middle">
+		<nav class="header-bottom flex-row">
+			<div class="container flex-row flex-col-md">
+				<div class="flex-row flex-between-md logo-container">
+					<img src="img/logo.png" alt="sportshold">
+					<svg class="menu-icon"><use xlink:="" href="img/sprite.svg#menu"></use></svg>
+				</div>
+				<ul class="flex-row flex-col-md flex-middle">
 					<li>
-						<a href="">Home</a>
+						<a href="#home">Home</a>
 					</li>
 					<li>
-						<a href="">Men</a>
+						<a href="#products">Men</a>
 					</li>
 					<li>
 						<a href="">Women</a>
@@ -74,9 +77,9 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</nav>
 		<div class="banner">
-			<div class="container flex-row flex-right ">
+			<div class="container flex-row flex-right flex-center-md">
 				<img src="img/banner.png" class="banner-img" alt="banner">
 				<div class="banner-text">
 					<div class="banner-text-price">From $80.00</div>
@@ -88,7 +91,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="s-products">
+	<section class="s-products" id="products">
 		<div class="container flex-row flex-col-xl flex-between flex-middle-xl">
 			<div class="flex-col flex-middle product collection">
 				<div class="product-title">Discover the new</div>
@@ -104,7 +107,7 @@
 						<button>Discover</button>
 					</div>
 				</div>
-				<div class="flex-row flex-between">
+				<div class="flex-row flex-col-sm flex-between">
 					<div class="flex-col product best">
 						<div class="product-title">Best for</div>
 						<h3>ATHLETES</h3>
@@ -124,7 +127,7 @@
 					<div class="category">Top picks</div>
 				</div>
 			</div>
-			<div class="flex-row flex-between flex-wrap products">
+			<div class="flex-row flex-between flex-around-md flex-center-sm flex-wrap products">
 				<div class="flex-col product">
 					<div class="discount-price">$45.00</div>
 					<div class="old-price">$60.00</div>
@@ -222,7 +225,7 @@
 			</div>
 		</div>
 		<div class="brands">
-			<div class="container flex-row flex-around flex-middle">
+			<div class="container flex-row flex-around flex-middle flex-wrap">
 				<img src="img/adidas-logo.png" alt="adidas-logo">
 				<img src="img/nike-logo.png" alt="nike-logo">
 				<img src="img/puma-logo.png" alt="puma-logo">
@@ -234,7 +237,7 @@
 	</section>
 	<section class="s-reviews">
 		<div class="container flex-col">
-			<div class="flex-row customers">
+			<div class="flex-row flex-col-md flex-around-xl flex-between-lg customers">
 				<div class="flex-col flex-middle customer">
 					<div class="flex-row flex-centered customer-img-container">
 						<img src="img/customer.jpg" alt="customer">
@@ -332,7 +335,7 @@
 	</section>
 	<footer>
 		<div class="container flex-row">
-			<div class="flex-row flex-between flex-wrap features">
+			<div class="flex-row flex-between flex-center-sm flex-wrap features">
 				<div class="flex-col flex-middle features-item">
 					<svg class="features-item-img"><use xlink:="" href="img/sprite.svg#free"></use></svg>
 					<div class="features-item-text">Free Shipping in Europe</div>
@@ -389,7 +392,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex-row flex-middle-md flex-between flex-wrap links-container">
+			<div class="flex-row flex-col-md flex-middle-md flex-between flex-wrap links-container">
 				<div class="links">
 					<h3>Navigation</h3>
 					<ul>
@@ -444,6 +447,7 @@
 		</div>
 	</footer>
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
 </body>
 
 </html>

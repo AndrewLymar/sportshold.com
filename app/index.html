@@ -12,7 +12,7 @@
 <body>
 	<header id="home">
 		<div class="header-top">
-			<div class="container flex-row flex-center-md flex-wrap">
+			<div class="container flex-row flex-col-md flex-middle-md">
 				<ul class="flex-row flex-middle">
 					<li>
 						<a href="">Support</a>
@@ -49,7 +49,7 @@
 		</div>
 		<nav class="header-bottom flex-row">
 			<div class="container flex-row flex-col-md">
-				<div class="flex-row flex-between-md logo-container">
+				<div class="flex-row flex-between-md flex-around-sm logo-container">
 					<img src="img/logo.png" alt="sportshold">
 					<svg class="menu-icon"><use xlink:="" href="img/sprite.svg#menu"></use></svg>
 				</div>
@@ -58,22 +58,16 @@
 						<a href="#home">Home</a>
 					</li>
 					<li>
-						<a href="#products">Men</a>
+						<a href="#new">New</a>
 					</li>
 					<li>
-						<a href="">Women</a>
+						<a href="#reviews">Reviews</a>
 					</li>
 					<li>
-						<a href="">Children</a>
+						<a href="#news">News</a>
 					</li>
 					<li>
-						<a href="">Baby</a>
-					</li>
-					<li>
-						<a href="">Our Brands</a>
-					</li>
-					<li>
-						<a href="">Sales</a>
+						<a href="#contacts">Contacts</a>
 					</li>
 				</ul>
 			</div>
@@ -91,7 +85,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="s-products" id="products">
+	<section class="s-products" id="new">
 		<div class="container flex-row flex-col-xl flex-between flex-middle-xl">
 			<div class="flex-col flex-middle product collection">
 				<div class="product-title">Discover the new</div>
@@ -121,7 +115,7 @@
 		</div>
 		<div class="container">
 			<div class="flex-row flex-center">
-				<div class="flex-row filters">
+				<div class="flex-row flex-col-sm filters">
 					<div class="category current-category">New</div>
 					<div class="category">Popular</div>
 					<div class="category">Top picks</div>
@@ -235,7 +229,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-reviews">
+	<section class="s-reviews" id="reviews">
 		<div class="container flex-col">
 			<div class="flex-row flex-col-md flex-around-xl flex-between-lg customers">
 				<div class="flex-col flex-middle customer">
@@ -284,7 +278,7 @@
 
 		</div>
 	</section>
-	<section class="s-latest">
+	<section class="s-latest" id="news">
 		<div class="container">
 			<h2>Latest news</h2>
 			<div class="flex-row flex-between flex-center-lg flex-wrap news">
@@ -333,7 +327,7 @@
 			<button>Make an inquiry</button>
 		</div>
 	</section>
-	<footer>
+	<footer class="contacts" id="contacts">
 		<div class="container flex-row">
 			<div class="flex-row flex-between flex-center-sm flex-wrap features">
 				<div class="flex-col flex-middle features-item">
@@ -364,7 +358,7 @@
 		</div>
 		<div class="container flex-row flex-between flex-col-lg flex-middle-lg contacts-and-links">
 			<div class="flex-col contacts">
-				<div class="flex-row contact">
+				<div class="flex-row flex-center-sm contact">
 					<div class="flex-row flex-centered contact-block">
 						<svg class="contact-block-img"><use xlink:="" href="img/sprite.svg#call"></use></svg>
 					</div>
@@ -373,7 +367,7 @@
 						<div class="telephone">0 (1234) 567 890</div>
 					</div>
 				</div>
-				<div class="flex-row contact">
+				<div class="flex-row flex-center-sm contact">
 					<div class="flex-row flex-centered contact-block">
 						<svg class="contact-block-img"><use xlink:="" href="img/sprite.svg#email"></use></svg>
 					</div>
@@ -382,7 +376,7 @@
 						<div class="telephone">hello@sportshold.com</div>
 					</div>
 				</div>
-				<div class="flex-row contact">
+				<div class="flex-row flex-center-sm contact">
 					<div class="flex-row flex-centered contact-block">
 						<svg class="contact-block-img"><use xlink:="" href="img/sprite.svg#location"></use></svg>
 					</div>

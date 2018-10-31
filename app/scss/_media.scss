@@ -1,4 +1,13 @@
 @media only screen and (max-width: $xl) {
+	body {
+		header {
+			.banner {
+				&-img {
+					left: -400px;
+				}
+			}
+		}
+	}
 	.s-reviews {
 		.customers {
 			padding: 0;
@@ -63,7 +72,6 @@
 		.header-top {
 			padding-top: 25px;
 			padding-bottom: 25px;
-			font-size: 13px;
 			background-color: #472424;
 			ul {
 				margin: 0;
@@ -78,11 +86,11 @@
 			height: auto;
 			padding-top: 50px;
 			padding-bottom: 50px;
-			position: fixed;
-			//margin-top: 125px;
-			top: 0;
 			.logo-container {
 				margin: 0;
+			}
+			.menu-icon {
+				display: flex;
 			}
 			ul {
 				display: none;
@@ -144,8 +152,12 @@
 		}
 	}
 	.brands {
-		img {
-			margin-top: 50px;
+		.container {
+			padding-left: 25px;
+			padding-right: 25px;
+			img {
+				margin-top: 50px;
+			}
 		}
 	}
 	.customer {
@@ -175,13 +187,36 @@
 }
 
 @media only screen and (max-width: $sm) {
+	header {
+		.header-top {
+			.cart-img {
+				display: none;
+			}
+			&-right-side {
+				.registration {
+					border: none;
+					&-container {
+						border: none!important;
+					}
+				}
+			}
+		}
+		.header-bottom {
+			.container {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
 	.s-products {
 		.filters {
 			margin-top: 60px;
 			padding-left: 10px;
 			padding-right: 10px;
+			text-align: center;
 			.category {
-				margin-right: 15px;
+				margin-bottom: 50px;
+				margin-right: 0;
 			}
 		}
 		.brands {
@@ -203,10 +238,97 @@
 		}
 	}
 	.contact {
-		.contact-block {
+		&-block {
 			display: none;
+		}
+		&-text {
+			text-align: center;
+		}
+	}
+	footer.contacts {
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: $xs) {
+	header {
+		.header-top {
+			font-size: 10px;
+			.container {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+		.header-bottom {
+			.container {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 		}
 	}
 }
 
-@media only screen and (max-width: $xs) {}
+
+/*For banner img only*/
+
+@media (min-width: 1500px) and (max-width: 1730px) {
+	body {
+		header {
+			.banner {
+				&-img {
+					left: -160px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+	body {
+		header {
+			.banner {
+				&-img {
+					left: -250px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+	body {
+		header {
+			.banner {
+				&-img {
+					left: -300px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 990px) and (max-width: 1120px) {
+	body {
+		header {
+			.banner {
+				&-img {
+					top: -10px;
+					left: -580px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+	body {
+		header {
+			.banner {
+				&-img {
+					top: -10px;
+					left: -750px;
+				}
+			}
+		}
+	}
+}

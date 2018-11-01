@@ -231,6 +231,12 @@
 			padding: 0;
 		}
 	}
+	.s-latest {
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 	.s-subscribe {
 		text-align: center;
 		.subscribe-img {
@@ -244,9 +250,6 @@
 		&-text {
 			text-align: center;
 		}
-	}
-	footer.contacts {
-		margin-bottom: 0;
 	}
 }
 
